@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="DataTables/media/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="DataTables/extensions/FixedColumns/css/fixedColumns.bootstrap.css">
+    <script type="text/javascript" charset="utf8" src="DataTables/media/js/jquery.js"></script>
+    <script type="text/javascript" charset="utf8" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="DataTables/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="DataTables/media/js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" charset="utf8" src="DataTables/extensions/FixedColumns/js/dataTables.fixedColumns.min.js"></script>
+    
+    <style>
+        /*th, td { white-space: nowrap; }*/
+        div.dataTables_wrapper {
+            width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="margin-top:80px;">
+        <table id="empGrid" width="100%"  class="table table-bordered table-striped table-hover" cellspacing="0">
+        </table>
+    </div>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            index.initGrid();
+        });
+    </script>
+</body>
+
+</html>
